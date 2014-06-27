@@ -35,7 +35,7 @@ The code
 ---
 Create a new instance
 
-var png = new Pngy(Object);
+var **png** = new Pngy(Object);
 
 
 
@@ -53,23 +53,19 @@ The object that is passed in holds the parameters for Pngy. It accepts the follo
 
 **sequences**:Object = These are the animation sequences that you will need to reference. In the example, the sequences are: 
 
-`jump:   {start: 0,  stop: 33},
-blink:  {start: 34, stop: 42},
-idle:   {start: 42, stop: 55},
-look:   {start: 55, stop: 75},
-scared: {start: 76, stop: 85}`
+	jump:   {start: 0,  stop: 33},
+	blink:  {start: 34, stop: 42},
+	idle:   {start: 42, stop: 55},
+	look:   {start: 55, stop: 75},
+	scared: {start: 76, stop: 85}
 
 **events**:Object = The callbacks that you want to specify. Currently supported callbacks are:
 
-onStart: The start of the full animation
-
-onComplete: The end of the full animation
-
-onAnimationStart: The beginning of a sequence
-
-onAnimationComplete: The end of a sequence
-
-onStep: Called every frame.
+	onStart: The start of the full animation
+	onComplete: The end of the full animation
+	onAnimationStart: The beginning of a sequence
+	onAnimationComplete: The end of a sequence
+	onStep: Called every frame.
 
 **View the source of the demo for any additional clarification**
 
