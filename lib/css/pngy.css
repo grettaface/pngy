@@ -1,5 +1,134 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: #eee;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    font: bold 20px/20px Arial, san-serif;
+    margin: 20px 0 0;
+}
+
+h2{
+    font: normal 14px/14px Arial, sans-serif;
+    margin: 10px 0 5px;
+}
+
+hr{
+    margin: 10px 0 20px;
+}
+
+#mainContent{
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: auto;
+}
+
 #pngy{
-    width: 240px;
-    height: 425px;
-    margin: auto;
+    width: 100px;
+    height: 212px;
+    position: fixed;
+}
+
+#controls{
+    float: left;
+    height: 100%;
+    border-left: 1px solid #ccc;
+    padding: 10px;
+    margin: 0 0 0 140px;
+    overflow: auto;
+    min-width: 100px;
+}
+
+.callbackDiv{
+    width: 150px;
+    overflow: auto;
+    float: left;
+    margin: 0 0 0 5px;
+}
+
+textarea{
+    width: 95%;
+    height: 100px;
+    resize: none;
+}
+
+label{
+    font: bold 12px/12px Arial, sans-serif;
+    margin: 0 5px 0 10px;
+}
+
+#currentFrame, #frameRate{
+    width:30px;
+}
+
+.button{
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: white;
+    cursor: pointer;
+    font: bold 14px/14px Arial, sans-serif;
+    float: left;
+    margin: 5px;
+}
+
+.button:hover{
+    background: #eee;
+}
+
+.clear{
+    clear: both;
 }

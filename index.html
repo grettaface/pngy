@@ -2,15 +2,95 @@
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title></title>
-    <link type="text/css" href="lib/css/pngy.css" rel="stylesheet">
+    <title>Pngy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="lib/css/pngy.css" rel="stylesheet">
 </head>
 <body>
 
-    <div id="pngy"></div>
+    <div id="mainContent">
+        <div id="pngy"></div>
+        <div id="controls">
+            <h1>Controls</h1>
+            <div class="button" onclick="sploosh.play()">Play</div>
+            <div class="button" onclick="sploosh.pause()">Pause</div>
+            <div class="button" onclick="sploosh.reverse()">Reverse</div>
+            <div class="button" onclick="sploosh.reset()">Reset</div>
+            <div class="button" onclick="sploosh.gotoAndPlay(15)">Go to and play</div>
+            <div class="button" onclick="sploosh.gotoAndStop(15)">Go to and stop</div>
+            <div class="button" onclick="sploosh.kill()">Kill clip (requires a refresh)</div>
+
+            <div class="clear"></div>
+
+            <h1>Sequences</h1>
+            <h2>Play</h2>
+
+            <div class="button" onclick="sploosh.playSequence('jump')">Jump</div>
+            <div class="button" onclick="sploosh.playSequence('blink')">Blink</div>
+            <div class="button" onclick="sploosh.playSequence('idle')">Idle</div>
+            <div class="button" onclick="sploosh.playSequence('look')">Look</div>
+            <div class="button" onclick="sploosh.playSequence('scared')">Scared</div>
+
+            <div class="clear"></div>
+
+            <h2>Play and loop</h2>
+
+            <div class="button" onclick="sploosh.playSequence('jump',true)">Jump</div>
+            <div class="button" onclick="sploosh.playSequence('blink',true)">Blink</div>
+            <div class="button" onclick="sploosh.playSequence('idle',true)">Idle</div>
+            <div class="button" onclick="sploosh.playSequence('look',true)">Look</div>
+            <div class="button" onclick="sploosh.playSequence('scared',true)">Scared</div>
+
+            <div class="clear"></div>
+
+            <h1>Information</h1>
+            <label for="currentFrame">Current frame</label>
+            <input id="currentFrame"/>
+
+            <label for="frameRate">Change frame rate</label>
+            <input id="frameRate" value="30" onkeyup="sploosh.setFrameRate(this.value || 30)"/>
+
+            <div id="amPlaying" class="button" onclick="alert(sploosh.isPlaying())">Am I playing?</div>
+
+
+            <div class="clear"></div>
+
+            <h1>Callbacks</h1>
+            <div class="callbackDiv">
+                <h2>Full Anim. Start</h2>
+                <textarea id="startCallback" readonly></textarea>
+            </div>
+
+            <div class="callbackDiv">
+                <h2>Full Anim. Complete</h2>
+                <textarea id="completeCallback" readonly></textarea>
+            </div>
+
+            <div class="callbackDiv">
+                <h2>Seq. Anim. Start</h2>
+                <textarea id="sequenceStartCallback" readonly></textarea>
+            </div>
+
+            <div class="callbackDiv">
+                <h2>Seq. Anim. Complete</h2>
+                <textarea id="sequenceCompleteCallback" readonly></textarea>
+            </div>
+
+            <div class="callbackDiv">
+                <h2>Step callback</h2>
+                <textarea readonly>Check console</textarea>
+            </div>
+
+            <div class="clear"></div>
+
+
+        </div>
+    </div>
+
+    <script src="lib/js/Pngy.js"></script>
+    <script src="lib/js/main.js"></script>
 
 </body>
-<script src="lib/js/Pngy.js"></script>
-<script src="lib/js/main.js"></script>
+
 
 </html>
