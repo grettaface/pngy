@@ -88,8 +88,6 @@ Examples
 ---
 *( if you use it, send me a link and I can add your project )*
 
----
-
 [Vitamin T UX infographic](http://vitamintalent.com/ux-statistic/)
 
 
