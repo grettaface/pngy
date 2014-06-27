@@ -99,6 +99,11 @@ If it looks like your animation is sliding while it is animating, that means tha
 
 If the end of your animation blinks or is missing it means that you do not have a full grid and you are not specifying totalFrames.
 
+Advice
+---
+
+I use [ImageOptim](https://imageoptim.com/) to fully optimize my spritesheets. It does an awesome job of lowering file size without effecting quality.
+
 
 
 
