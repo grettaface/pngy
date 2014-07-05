@@ -85,7 +85,6 @@ I cannot test on every platform but everything that I have tested on has worked.
 - IE 8+
 - iOS 6+
 - Android 2.3+
-- Basically anything that supports background images and background position which should be IE4+ and EVERYTHING else.
 
 Examples 
 ---
