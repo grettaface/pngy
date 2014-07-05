@@ -5,7 +5,7 @@ Pngy is a javascript object that allows for highly controllable png animations.
 ---
 
 
-[View the demo](http://jsfiddle.net/grettaface/6ymhT/7/)
+[View the demo](http://jsfiddle.net/grettaface/y9GLa/)
 
 
 It has no dependencies other than Javascript. As long as you provide it with a spritesheet that it expects, it will do the rest. **Minified version is only 4kb!**
